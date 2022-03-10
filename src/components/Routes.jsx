@@ -1,6 +1,7 @@
 import React from 'react'
 import { Switch , Route , Redirect} from 'react-router-dom';
 import Results from './Results.jsx';
+import Maps from './Maps';
 
 const Routes = () => {
   return (
@@ -12,7 +13,9 @@ const Routes = () => {
         <Route exact path={['/search','/images','/news','/videos']}>
           <Results/>
         </Route>
-
+        <Route exact path='/maps'>
+          <Maps/>
+        </Route>
     </Switch>
     </div>
   )
