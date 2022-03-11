@@ -4,10 +4,13 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Routes from './components/Routes';
 import { useState } from 'react';
+// import useAlan from './hooks/useAlan';
 
 function App() {
-
+  
   const [darkTheme, setDarkTheme] = useState(false);
+  
+  // useAlan();
 
   return (
     <>

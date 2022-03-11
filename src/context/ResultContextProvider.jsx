@@ -7,6 +7,7 @@ export const ResultContextProvider = ( {children}) => {
     const [results, setResults] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const [searchTerm, setSearchTerm] = useState('Elon Musk');
+    const [alanInstance, setAlanInstance] = useState();
 
     // /videos, /search, /images
     const getResults = async (type) => {
@@ -35,7 +36,7 @@ export const ResultContextProvider = ( {children}) => {
     }
 
     return (
-        <ResultContext.Provider value={{getResults, results, searchTerm, setSearchTerm, isLoading}}>
+        <ResultContext.Provider value={{getResults, results, searchTerm, setSearchTerm, isLoading, alanInstance, setAlanInstance}}>
             {children}
         </ResultContext.Provider>
     );
